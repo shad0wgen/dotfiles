@@ -1,0 +1,12 @@
+/*
+!.gitignore
+!bin/
+bin/vpnbastec.sh
+
+!.config/
+.config/*
+!.config/i3/
+.config/i3/*
+!.config/i3/i3status.conf
+!.config/i3/config
+
