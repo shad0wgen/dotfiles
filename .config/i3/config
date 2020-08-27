@@ -403,6 +403,10 @@ bindsym --release $mod+Escape exec xkill
 
 bindsym --release $mod+m exec /home/danne/bin/mount.sh
 
+# å  // Use xev command to find special caracters
+bindsym --release $mod+aring exec /home/danne/bin/toggleTodo.sh
+
+
 #####################################################################################################################
 #################                          screenshots                                              #################
 #####################################################################################################################
@@ -424,6 +428,7 @@ bindsym Control+Shift+Print exec --no-startup-id gnome-screenshot -i
 
 #floating enabled from some programs - find with xprop
 
+for_window [class="todo"] floating enable
 for_window [title="Microsoft Teams Notification"] floating enable
 for_window [class="Bleachbit"] floating disable
 for_window [class="SpeedCrunch"] floating enable
