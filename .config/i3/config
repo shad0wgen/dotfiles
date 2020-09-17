@@ -406,6 +406,8 @@ bindsym --release $mod+m exec /home/danne/bin/mount.sh
 # å  // Use xev command to find special caracters
 bindsym --release $mod+aring exec /home/danne/bin/toggleTodo.sh
 
+bindsym --release $mod+c exec /home/danne/bin/toggleSpeedcrunch.sh
+
 
 #####################################################################################################################
 #################                          screenshots                                              #################
