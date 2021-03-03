@@ -63,7 +63,7 @@ set $right semicolon
 #exec --no-startup-id xrandr --output DVI-D-1 --right-of DVI-I-1 --auto
 exec --no-startup-id xrandr --output HDMI2 --right-of HDMI1 --auto
 
-#set $monL eDP-1-1
+# set $monL eDP-1-1
 set $monL DP-1-1-1
 set $monR DP-1-1-8
 
@@ -389,6 +389,7 @@ exec --no-startup-id conky -c ~/.config/i3/system-shortcuts
 
 bindsym $mod+Return exec --no-startup-id st;focus
 bindsym $mod+Shift+m exec --no-startup-id /home/danne/.screenlayout/dual-lid-closed.sh &
+bindsym $mod+Shift+n exec --no-startup-id /home/danne/.screenlayout/scale-no-external-monitor.sh &
 
 # '
 bindsym $mod+apostrophe exec --no-startup-id /usr/bin/code
@@ -408,6 +409,7 @@ bindsym --release $mod+aring exec /home/danne/bin/toggleTodo.sh
 
 bindsym --release $mod+c exec /home/danne/bin/toggleSpeedcrunch.sh
 
+bindsym --release $mod+u exec /home/danne/bin/unicode.sh
 
 #####################################################################################################################
 #################                          screenshots                                              #################
@@ -416,7 +418,7 @@ bindsym --release $mod+c exec /home/danne/bin/toggleSpeedcrunch.sh
 
 # bindsym Print exec --no-startup-id scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f$$(xdg-user-dir PICTURES'
 bindsym --release Print exec --no-startup-id scrot -s
-bindsym Control+Print exec --no-startup-id xfce4-screenshooter
+bindsym Control+Print exec --no-startup-id kazam
 bindsym Control+Shift+Print exec --no-startup-id gnome-screenshot -i
 #bindsym shift+Print exec --no-startup-id shutter
 
@@ -570,7 +572,7 @@ bindsym $mod+shift+b exec --no-startup-id i3-msg border toggle
 #super+t in arcolinux is starting terminal
 bindsym $mod+t border normal
 bindsym $mod+y border 1pixel
-bindsym $mod+u border none
+#bindsym $mod+u border none
 
 
 #new_window pixel 1
